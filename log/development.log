@@ -1,0 +1,520 @@
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150225022412)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150225022412"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (16.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (15.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (15.1ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fantastic Plastic Shirt"], ["price", 2], ["created_at", "2015-02-25 02:26:49.132735"], ["updated_at", "2015-02-25 02:26:49.132735"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rustic Plastic Gloves"], ["price", 78], ["created_at", "2015-02-25 02:26:49.161823"], ["updated_at", "2015-02-25 02:26:49.161823"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Granite Pants"], ["price", 35], ["created_at", "2015-02-25 02:26:49.174975"], ["updated_at", "2015-02-25 02:26:49.174975"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ergonomic Plastic Shoes"], ["price", 6], ["created_at", "2015-02-25 02:26:49.178555"], ["updated_at", "2015-02-25 02:26:49.178555"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Intelligent Concrete Shirt"], ["price", 12], ["created_at", "2015-02-25 02:26:49.181687"], ["updated_at", "2015-02-25 02:26:49.181687"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Granite Gloves"], ["price", 32], ["created_at", "2015-02-25 02:26:49.185223"], ["updated_at", "2015-02-25 02:26:49.185223"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible Granite Shoes"], ["price", 89], ["created_at", "2015-02-25 02:26:49.188134"], ["updated_at", "2015-02-25 02:26:49.188134"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Wooden Car"], ["price", 40], ["created_at", "2015-02-25 02:26:49.191774"], ["updated_at", "2015-02-25 02:26:49.191774"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Steel Car"], ["price", 20], ["created_at", "2015-02-25 02:26:49.194808"], ["updated_at", "2015-02-25 02:26:49.194808"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Steel Table"], ["price", 16], ["created_at", "2015-02-25 02:26:49.198269"], ["updated_at", "2015-02-25 02:26:49.198269"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Wooden Gloves"], ["price", 98], ["created_at", "2015-02-25 02:26:49.201324"], ["updated_at", "2015-02-25 02:26:49.201324"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gorgeous Plastic Hat"], ["price", 97], ["created_at", "2015-02-25 02:26:49.204639"], ["updated_at", "2015-02-25 02:26:49.204639"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Practical Cotton Computer"], ["price", 60], ["created_at", "2015-02-25 02:26:49.208292"], ["updated_at", "2015-02-25 02:26:49.208292"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Incredible Rubber Shirt"], ["price", 47], ["created_at", "2015-02-25 02:26:49.212064"], ["updated_at", "2015-02-25 02:26:49.212064"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Granite Table"], ["price", 10], ["created_at", "2015-02-25 02:26:49.215068"], ["updated_at", "2015-02-25 02:26:49.215068"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ergonomic Concrete Chair"], ["price", 18], ["created_at", "2015-02-25 02:26:49.217920"], ["updated_at", "2015-02-25 02:26:49.217920"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Practical Wooden Table"], ["price", 14], ["created_at", "2015-02-25 02:26:49.222136"], ["updated_at", "2015-02-25 02:26:49.222136"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Steel Gloves"], ["price", 81], ["created_at", "2015-02-25 02:26:49.225432"], ["updated_at", "2015-02-25 02:26:49.225432"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Plastic Gloves"], ["price", 42], ["created_at", "2015-02-25 02:26:49.228667"], ["updated_at", "2015-02-25 02:26:49.228667"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rustic Wooden Pants"], ["price", 92], ["created_at", "2015-02-25 02:26:49.231914"], ["updated_at", "2015-02-25 02:26:49.231914"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Granite Chair"], ["price", 51], ["created_at", "2015-02-25 02:26:49.234834"], ["updated_at", "2015-02-25 02:26:49.234834"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rustic Granite Hat"], ["price", 30], ["created_at", "2015-02-25 02:26:49.238457"], ["updated_at", "2015-02-25 02:26:49.238457"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Granite Car"], ["price", 78], ["created_at", "2015-02-25 02:26:49.241570"], ["updated_at", "2015-02-25 02:26:49.241570"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Small Granite Pants"], ["price", 20], ["created_at", "2015-02-25 02:26:49.244605"], ["updated_at", "2015-02-25 02:26:49.244605"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Cotton Chair"], ["price", 51], ["created_at", "2015-02-25 02:26:49.248222"], ["updated_at", "2015-02-25 02:26:49.248222"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Wooden Computer"], ["price", 81], ["created_at", "2015-02-25 02:26:49.251260"], ["updated_at", "2015-02-25 02:26:49.251260"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Awesome Granite Shoes"], ["price", 57], ["created_at", "2015-02-25 02:26:49.254556"], ["updated_at", "2015-02-25 02:26:49.254556"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Incredible Steel Car"], ["price", 29], ["created_at", "2015-02-25 02:26:49.257557"], ["updated_at", "2015-02-25 02:26:49.257557"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Rubber Chair"], ["price", 26], ["created_at", "2015-02-25 02:26:49.260566"], ["updated_at", "2015-02-25 02:26:49.260566"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Small Steel Computer"], ["price", 32], ["created_at", "2015-02-25 02:26:49.263324"], ["updated_at", "2015-02-25 02:26:49.263324"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Wooden Car"], ["price", 1], ["created_at", "2015-02-25 02:26:49.266551"], ["updated_at", "2015-02-25 02:26:49.266551"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Practical Steel Table"], ["price", 74], ["created_at", "2015-02-25 02:26:49.269659"], ["updated_at", "2015-02-25 02:26:49.269659"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Cotton Shirt"], ["price", 51], ["created_at", "2015-02-25 02:26:49.273290"], ["updated_at", "2015-02-25 02:26:49.273290"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Small Plastic Computer"], ["price", 47], ["created_at", "2015-02-25 02:26:49.276841"], ["updated_at", "2015-02-25 02:26:49.276841"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sleek Concrete Shoes"], ["price", 28], ["created_at", "2015-02-25 02:26:49.280213"], ["updated_at", "2015-02-25 02:26:49.280213"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rustic Rubber Car"], ["price", 64], ["created_at", "2015-02-25 02:26:49.283775"], ["updated_at", "2015-02-25 02:26:49.283775"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Cotton Hat"], ["price", 1], ["created_at", "2015-02-25 02:26:49.287304"], ["updated_at", "2015-02-25 02:26:49.287304"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fantastic Rubber Computer"], ["price", 25], ["created_at", "2015-02-25 02:26:49.290630"], ["updated_at", "2015-02-25 02:26:49.290630"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Practical Cotton Shoes"], ["price", 21], ["created_at", "2015-02-25 02:26:49.293800"], ["updated_at", "2015-02-25 02:26:49.293800"]]
+  [1m[35m (17.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Wooden Computer"], ["price", 45], ["created_at", "2015-02-25 02:26:49.313575"], ["updated_at", "2015-02-25 02:26:49.313575"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Concrete Computer"], ["price", 1], ["created_at", "2015-02-25 02:26:49.317951"], ["updated_at", "2015-02-25 02:26:49.317951"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Plastic Computer"], ["price", 70], ["created_at", "2015-02-25 02:26:49.322807"], ["updated_at", "2015-02-25 02:26:49.322807"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Cotton Gloves"], ["price", 37], ["created_at", "2015-02-25 02:26:49.326550"], ["updated_at", "2015-02-25 02:26:49.326550"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Incredible Granite Pants"], ["price", 25], ["created_at", "2015-02-25 02:26:49.330564"], ["updated_at", "2015-02-25 02:26:49.330564"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sleek Wooden Hat"], ["price", 69], ["created_at", "2015-02-25 02:26:49.333759"], ["updated_at", "2015-02-25 02:26:49.333759"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Practical Wooden Shirt"], ["price", 5], ["created_at", "2015-02-25 02:26:49.336412"], ["updated_at", "2015-02-25 02:26:49.336412"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Plastic Gloves"], ["price", 14], ["created_at", "2015-02-25 02:26:49.339785"], ["updated_at", "2015-02-25 02:26:49.339785"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Granite Shirt"], ["price", 38], ["created_at", "2015-02-25 02:26:49.342984"], ["updated_at", "2015-02-25 02:26:49.342984"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Concrete Shoes"], ["price", 73], ["created_at", "2015-02-25 02:26:49.345763"], ["updated_at", "2015-02-25 02:26:49.345763"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fantastic Rubber Table"], ["price", 36], ["created_at", "2015-02-25 02:26:49.348909"], ["updated_at", "2015-02-25 02:26:49.348909"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Steel Car"], ["price", 85], ["created_at", "2015-02-25 02:26:49.352004"], ["updated_at", "2015-02-25 02:26:49.352004"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rustic Rubber Shirt"], ["price", 17], ["created_at", "2015-02-25 02:26:49.355151"], ["updated_at", "2015-02-25 02:26:49.355151"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fantastic Rubber Chair"], ["price", 22], ["created_at", "2015-02-25 02:26:49.358303"], ["updated_at", "2015-02-25 02:26:49.358303"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fantastic Granite Gloves"], ["price", 27], ["created_at", "2015-02-25 02:26:49.361658"], ["updated_at", "2015-02-25 02:26:49.361658"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fantastic Wooden Chair"], ["price", 66], ["created_at", "2015-02-25 02:26:49.364984"], ["updated_at", "2015-02-25 02:26:49.364984"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Steel Table"], ["price", 54], ["created_at", "2015-02-25 02:26:49.368447"], ["updated_at", "2015-02-25 02:26:49.368447"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Steel Table"], ["price", 19], ["created_at", "2015-02-25 02:26:49.372810"], ["updated_at", "2015-02-25 02:26:49.372810"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Steel Car"], ["price", 36], ["created_at", "2015-02-25 02:26:49.376048"], ["updated_at", "2015-02-25 02:26:49.376048"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Plastic Hat"], ["price", 64], ["created_at", "2015-02-25 02:26:49.379013"], ["updated_at", "2015-02-25 02:26:49.379013"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Concrete Chair"], ["price", 10], ["created_at", "2015-02-25 02:26:49.382990"], ["updated_at", "2015-02-25 02:26:49.382990"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Intelligent Rubber Pants"], ["price", 71], ["created_at", "2015-02-25 02:26:49.386125"], ["updated_at", "2015-02-25 02:26:49.386125"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Practical Wooden Table"], ["price", 57], ["created_at", "2015-02-25 02:26:49.389672"], ["updated_at", "2015-02-25 02:26:49.389672"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Awesome Concrete Pants"], ["price", 35], ["created_at", "2015-02-25 02:26:49.393667"], ["updated_at", "2015-02-25 02:26:49.393667"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Awesome Granite Computer"], ["price", 75], ["created_at", "2015-02-25 02:26:49.396998"], ["updated_at", "2015-02-25 02:26:49.396998"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Rubber Chair"], ["price", 89], ["created_at", "2015-02-25 02:26:49.400833"], ["updated_at", "2015-02-25 02:26:49.400833"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ergonomic Granite Car"], ["price", 62], ["created_at", "2015-02-25 02:26:49.404339"], ["updated_at", "2015-02-25 02:26:49.404339"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Rubber Table"], ["price", 54], ["created_at", "2015-02-25 02:26:49.407411"], ["updated_at", "2015-02-25 02:26:49.407411"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Small Granite Hat"], ["price", 63], ["created_at", "2015-02-25 02:26:49.410851"], ["updated_at", "2015-02-25 02:26:49.410851"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Awesome Wooden Shirt"], ["price", 53], ["created_at", "2015-02-25 02:26:49.414331"], ["updated_at", "2015-02-25 02:26:49.414331"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fantastic Rubber Car"], ["price", 26], ["created_at", "2015-02-25 02:26:49.417676"], ["updated_at", "2015-02-25 02:26:49.417676"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Plastic Gloves"], ["price", 68], ["created_at", "2015-02-25 02:26:49.421474"], ["updated_at", "2015-02-25 02:26:49.421474"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Rubber Gloves"], ["price", 93], ["created_at", "2015-02-25 02:26:49.425683"], ["updated_at", "2015-02-25 02:26:49.425683"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Granite Hat"], ["price", 4], ["created_at", "2015-02-25 02:26:49.429135"], ["updated_at", "2015-02-25 02:26:49.429135"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Wooden Table"], ["price", 91], ["created_at", "2015-02-25 02:26:49.432188"], ["updated_at", "2015-02-25 02:26:49.432188"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible Concrete Pants"], ["price", 78], ["created_at", "2015-02-25 02:26:49.435246"], ["updated_at", "2015-02-25 02:26:49.435246"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fantastic Plastic Table"], ["price", 69], ["created_at", "2015-02-25 02:26:49.438892"], ["updated_at", "2015-02-25 02:26:49.438892"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Small Plastic Gloves"], ["price", 87], ["created_at", "2015-02-25 02:26:49.446210"], ["updated_at", "2015-02-25 02:26:49.446210"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Plastic Hat"], ["price", 49], ["created_at", "2015-02-25 02:26:49.450798"], ["updated_at", "2015-02-25 02:26:49.450798"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Steel Shoes"], ["price", 16], ["created_at", "2015-02-25 02:26:49.459518"], ["updated_at", "2015-02-25 02:26:49.459518"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Granite Car"], ["price", 97], ["created_at", "2015-02-25 02:26:49.463733"], ["updated_at", "2015-02-25 02:26:49.463733"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Plastic Hat"], ["price", 4], ["created_at", "2015-02-25 02:26:49.467260"], ["updated_at", "2015-02-25 02:26:49.467260"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Intelligent Cotton Shoes"], ["price", 27], ["created_at", "2015-02-25 02:26:49.470461"], ["updated_at", "2015-02-25 02:26:49.470461"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible Steel Pants"], ["price", 68], ["created_at", "2015-02-25 02:26:49.473297"], ["updated_at", "2015-02-25 02:26:49.473297"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gorgeous Granite Car"], ["price", 24], ["created_at", "2015-02-25 02:26:49.477455"], ["updated_at", "2015-02-25 02:26:49.477455"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Wooden Chair"], ["price", 85], ["created_at", "2015-02-25 02:26:49.480601"], ["updated_at", "2015-02-25 02:26:49.480601"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Awesome Rubber Table"], ["price", 60], ["created_at", "2015-02-25 02:26:49.491065"], ["updated_at", "2015-02-25 02:26:49.491065"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Awesome Concrete Car"], ["price", 22], ["created_at", "2015-02-25 02:26:49.494740"], ["updated_at", "2015-02-25 02:26:49.494740"]]
+  [1m[35m (30.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Incredible Granite Car"], ["price", 60], ["created_at", "2015-02-25 02:26:49.527875"], ["updated_at", "2015-02-25 02:26:49.527875"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible Concrete Shirt"], ["price", 10], ["created_at", "2015-02-25 02:26:49.532632"], ["updated_at", "2015-02-25 02:26:49.532632"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Practical Wooden Car"], ["price", 44], ["created_at", "2015-02-25 02:26:49.536741"], ["updated_at", "2015-02-25 02:26:49.536741"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Awesome Steel Chair"], ["price", 48], ["created_at", "2015-02-25 02:26:49.541039"], ["updated_at", "2015-02-25 02:26:49.541039"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gorgeous Granite Shirt"], ["price", 6], ["created_at", "2015-02-25 02:26:49.544381"], ["updated_at", "2015-02-25 02:26:49.544381"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ergonomic Steel Table"], ["price", 51], ["created_at", "2015-02-25 02:26:49.547914"], ["updated_at", "2015-02-25 02:26:49.547914"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Small Cotton Shirt"], ["price", 51], ["created_at", "2015-02-25 02:26:49.551723"], ["updated_at", "2015-02-25 02:26:49.551723"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible Rubber Car"], ["price", 98], ["created_at", "2015-02-25 02:26:49.554820"], ["updated_at", "2015-02-25 02:26:49.554820"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ergonomic Concrete Shirt"], ["price", 85], ["created_at", "2015-02-25 02:26:49.559900"], ["updated_at", "2015-02-25 02:26:49.559900"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rustic Wooden Chair"], ["price", 94], ["created_at", "2015-02-25 02:26:49.563066"], ["updated_at", "2015-02-25 02:26:49.563066"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Incredible Plastic Computer"], ["price", 28], ["created_at", "2015-02-25 02:26:49.566139"], ["updated_at", "2015-02-25 02:26:49.566139"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gorgeous Rubber Table"], ["price", 90], ["created_at", "2015-02-25 02:26:49.568991"], ["updated_at", "2015-02-25 02:26:49.568991"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sleek Concrete Computer"], ["price", 92], ["created_at", "2015-02-25 02:26:49.572488"], ["updated_at", "2015-02-25 02:26:49.572488"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-24 18:27:03 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (24.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /opt/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 132ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-24 18:28:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (12.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (23.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 2586ms (Views: 2529.2ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/scaffolds-a6d5c2cf5094e5e7a0d16c18ef427540.css?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/application-c4a93012256b1d514780975fb72dd4fe.css?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/products-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for 127.0.0.1 at 2015-02-24 18:28:44 -0800
+
+
+Started GET "/posts/new" for ::1 at 2015-02-25 10:39:38 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (14.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (59.9ms)
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (27.7ms)
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (367.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-25 10:39:40 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (29.0ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (1.5ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (492.2ms)
+Completed 200 OK in 3134ms (Views: 3100.4ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/scaffolds-deebd6da4e5e202dcf66cb3325a7340f.css?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/application-3d07c4683b686dd2d1d678c3034c8f4d.css?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/products-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-02-25 10:39:44 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-25 10:39:44 -0800
